@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: jaffle_shop_syed_raw
+    tables:
+      - name: raw_customers
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: raw_orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+      - name: raw_payments
+        
